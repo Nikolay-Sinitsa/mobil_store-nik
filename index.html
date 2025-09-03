@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/font/font.css" />
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Document</title>
   </head>
@@ -10,18 +14,131 @@
     <header class="header">
       <div class="container header__container">
         <div class="header__logo">
-          <img src="./media/header/logo.svg" alt="" />
+          <a href="./index.html"
+            ><img src="./media/header/logo.svg" alt="logo-mobil"
+          /></a>
         </div>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link">all products</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link">Solutions</a>
+              <button class="nav__list-svg">
+                <img src="./media/header/arrow.svg" alt="arrow" />
+              </button>
+            </li>
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link">ABOUT</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="" class="nav__list-link">support</a>
+            </li>
           </ul>
         </nav>
-        <div class="header__icon"></div>
+        <div class="header__icon">
+          <div class="header__icon-wrap">
+            <img
+              src="./media/header/search.svg"
+              alt="search"
+              class="header__icon-search" />
+          </div>
+          <div class="header__icon-wrap">
+            <img
+              src="./media/header/basket.svg"
+              alt="basket"
+              class="header__icon-basket" />
+          </div>
+        </div>
       </div>
     </header>
+
+    <section class="store">
+      <div class="container store__container">
+        <div class="store__slider swiper">
+          <div class="store__wrapper swiper-wrapper">
+            <div class="store__slide swiper-slide">
+              <div class="store__prev"></div>
+              <div class="store__info">
+                <div class="store__info-wrapper">
+                  <h1 class="store__info-title">
+                    The new phones are here take a look.
+                  </h1>
+                  <p class="store__info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Scelerisque in est dui, aliquam, tempor. Faucibus morbi
+                    turpis.
+                  </p>
+                  <button type="button" class="store__info-button">
+                    Explore
+                  </button>
+                </div>
+              </div>
+              <div class="store__phone">
+                <div class="store__pictures">
+                  <img src="./media/sect-store/3-Iphone.png" alt="" />
+                </div>
+                <div class="store__next"></div>
+              </div>
+            </div>
+            <div class="store__slide swiper-slide">
+              <div class="store__info">
+                <div class="store__info-wrapper">
+                  <h1 class="store__info-title">
+                    The new phones are here take a look.
+                  </h1>
+                  <p class="store__info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Scelerisque in est dui, aliquam, tempor. Faucibus morbi
+                    turpis.
+                  </p>
+                  <button type="button" class="store__info-button">
+                    Explore
+                  </button>
+                </div>
+              </div>
+              <div class="store__phone">
+                <div class="store__pictures">
+                  <img src="./media/sect-store/3-Iphone.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="store__slide swiper-slide">
+              <div class="store__info">
+                <div class="store__info-wrapper">
+                  <h1 class="store__info-title">
+                    The new phones are here take a look.
+                  </h1>
+                  <p class="store__info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Scelerisque in est dui, aliquam, tempor. Faucibus morbi
+                    turpis.
+                  </p>
+                  <button type="button" class="store__info-button">
+                    Explore
+                  </button>
+                </div>
+              </div>
+              <div class="store__phone">
+                <div class="store__pictures">
+                  <img src="./media/sect-store/3-Iphone.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="store__pagination swiper-pagination"></div>
+          <button class="store__prev">
+            <img src="/media/sect-store/prev.svg" alt="" />
+          </button>
+          <button class="store__next">
+            <img src="./media/sect-store/next.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script/swiper-bundle.min.js"></script>
+    <script src="./script/main.js"></script>
   </body>
 </html>

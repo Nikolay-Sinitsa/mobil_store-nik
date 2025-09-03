@@ -1,4 +1,127 @@
-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 25px;
+.header {
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px;
+    margin-bottom: 28px;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 8px 20px 8px 13px;
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    &-svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+    }
+    &-item {
+      &:nth-child(2) {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin-right: 34px;
+      }
+      &:nth-child(3) {
+        margin-right: 44px;
+      }
+    }
+    &-link {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: #000;
+    }
+  }
+}
+
+.store {
+  &__slide {
+    position: relative;
+    padding-left: 56px;
+    display: flex;
+    border-radius: 32px;
+    background: #dce5e2;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    padding: 27px 0 27px;
+  }
+  &__prev {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    left: 18px;
+  }
+  &__next {
+    right: 18px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    background: transparent;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    max-width: 588px;
+    &-title {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 1.2;
+      color: #000;
+      margin-bottom: 19px;
+    }
+    &-text {
+      margin-bottom: 30px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #000;
+    }
+    &-button {
+      border: 1px solid #000;
+      border-radius: 200px;
+      max-width: 170px;
+      background: transparent;
+      cursor: pointer;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.2;
+      text-transform: capitalize;
+      color: #000;
+      padding: 14px 53px;
+    }
+  }
+  &__pictures {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  height: 2px;
+  border: navajowhite;
+  max-width: 194px;
+  background: #000;
+  width: 100%;
+  border-radius: 0;
 }
