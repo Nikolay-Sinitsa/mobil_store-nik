@@ -3,8 +3,8 @@
 const swiper = new Swiper('.swiper', {
     effect: 'cube',
     slidesPerView: 1,
-    spaceBetween: 2,
-    speed: 600,
+    speed: 800,
+    loop: true,
 
 
     pagination: {
