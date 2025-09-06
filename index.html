@@ -38,18 +38,24 @@
           </ul>
         </nav>
         <div class="header__icon">
-          <div class="header__icon-wrap">
+          <form class="header__form">
+            <input
+              class="header__form-input"
+              type="text"
+              placeholder="Search" />
+          </form>
+          <button id="openSearch" class="header__icon-wrap">
             <img
               src="./media/header/search.svg"
               alt="search"
               class="header__icon-search" />
-          </div>
-          <div class="header__icon-wrap">
+          </button>
+          <button class="header__icon-wrap">
             <img
               src="./media/header/basket.svg"
               alt="basket"
               class="header__icon-basket" />
-          </div>
+          </button>
         </div>
       </div>
     </header>
@@ -362,6 +368,81 @@
         </div>
       </div>
     </section>
+
+    <section class="gift">
+      <div class="container gift__container">
+        <div class="gift__wrapper">
+          <div class="gift__info">
+            <h2 class="gift__info-title">Never miss a thing</h2>
+            <p class="gift__info-text">
+              Sign up for texts to be notified about our best offers on the
+              perfect gifts.
+            </p>
+          </div>
+          <div class="gift__img">
+            <img src="./media/sect-gift/device.png" alt="device" />
+          </div>
+          <form class="gift__form">
+            <input
+              class="gift__form-input"
+              placeholder="Your email"
+              type="email"
+              id="giftInput" />
+            <button class="gift__form-button">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__block">
+          <div class="footer__logo">
+            <img src="./media/footer/logo.svg" alt="logo" />
+          </div>
+          <div class="footer__block-text">
+            Sign up for texts to be notified about our best offers on the
+            perfect gifts.
+          </div>
+        </div>
+        <div class="footer__link">
+          <div class="footer__product">
+            <h6 class="footer__product-title">All products</h6>
+            <div class="footer__product-wrap">
+              <a class="footer__product-link" href="http://">Phones</a>
+              <a class="footer__product-link" href="http://">Watch</a>
+              <a class="footer__product-link" href="http://">Tablet</a>
+              <a class="footer__product-link" href="http://">Laptops</a>
+            </div>
+          </div>
+          <div class="footer__company">
+            <h6 class="footer__company-title">Company</h6>
+            <div class="footer__company-wrap">
+              <a class="footer__company-link" href="http://">About</a>
+              <a class="footer__company-link" href="http://">Support</a>
+            </div>
+          </div>
+          <div class="footer__support">
+            <h6 class="footer__support-title">Support</h6>
+            <div class="footer__support-wrap">
+              <a href="" class="footer__support-link">Style Guide</a
+              ><a href="" class="footer__support-link">Licensing</a
+              ><a href="" class="footer__support-link">Change Log</a
+              ><a href="" class="footer__support-link">Contact</a>
+            </div>
+          </div>
+          <div class="footer__social">
+            <h6 class="footer__social-title">Follow Us</h6>
+            <div class="footer__social-wrap">
+              <a href="" class="footer__social-link">Instagram</a
+              ><a href="" class="footer__social-link">Facebook</a
+              ><a href="" class="footer__social-link">LinkedIn</a
+              ><a href="" class="footer__social-link">Youtube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./script/swiper-bundle.min.js"></script>
     <script src="./script/main.js"></script>
