@@ -1,13 +1,18 @@
-
 const openSearchBtn = document.getElementById('openSearch');
 const form = document.querySelector('.header__form');
 
-openSearchBtn.addEventListener('click', () => {
+openSearchBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     form.classList.toggle('active');
 });
 
+document.addEventListener('click', (e) => {
+    if (!form.contains(e.target) && !openSearchBtn.contains(e.target)) {
+        form.classList.remove('active');
+    }
+});
 
-
+/////////
 
 const swiper = new Swiper('.swiper', {
     effect: 'cube',
