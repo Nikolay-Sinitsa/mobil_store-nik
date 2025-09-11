@@ -105,6 +105,9 @@
   color: #000;
 }
 .store__info-button {
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -937,6 +940,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
   }
 }
 @media (max-width: 370px) {
