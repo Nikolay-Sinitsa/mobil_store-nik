@@ -15,11 +15,22 @@ document.addEventListener('click', (e) => {
 /////////
 
 const swiper = new Swiper('.swiper', {
-    effect: 'cube',
-
     slidesPerView: 1,
-    speed: 1100,
     loop: true,
+    speed: 1600,
+    effect: 'creative',
+    creativeEffect: {
+        prev: {
+            translate: ['-120%', 0, -500],
+            opacity: 0.4,
+            scale: 0.8,
+        },
+        next: {
+            translate: ['120%', 0, -500],
+            opacity: 1,
+            scale: 1,
+        },
+    },
     pagination: {
         el: '.store__pagination',
         type: 'bullets',
@@ -30,3 +41,4 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.store__prev',
     },
 });
+

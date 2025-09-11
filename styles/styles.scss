@@ -61,7 +61,11 @@
   &__container {
     max-width: 1294px;
   }
+  &__slider {
+    overflow: hidden;
+  }
   &__slide {
+    padding-left: 56px;
     position: relative;
 
     display: flex;
@@ -967,10 +971,10 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      // padding: 20px;......
+      padding: 40px 20px 20px;
     }
     @media (max-width: 370px) {
-      min-height: 340px;
+      // min-height: 340px;
     }
   }
   &__pagination {
@@ -1021,7 +1025,7 @@
 
     &-button {
       @media (max-width: 655px) {
-        margin: 0 auto;
+        margin: 0 auto 25px;
         max-width: 300px;
         width: 100%;
       }

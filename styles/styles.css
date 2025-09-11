@@ -55,7 +55,11 @@
 .store__container {
   max-width: 1294px;
 }
+.store__slider {
+  overflow: hidden;
+}
 .store__slide {
+  padding-left: 56px;
   position: relative;
   display: flex;
   border-radius: 32px;
@@ -938,11 +942,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-}
-@media (max-width: 370px) {
-  .store__slide {
-    min-height: 340px;
+    padding: 40px 20px 20px;
   }
 }
 @media (max-width: 655px) {
@@ -1003,7 +1003,7 @@
 }
 @media (max-width: 655px) {
   .store__info-button {
-    margin: 0 auto;
+    margin: 0 auto 25px;
     max-width: 300px;
     width: 100%;
   }
