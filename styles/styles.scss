@@ -63,7 +63,7 @@
   }
   &__slide {
     position: relative;
-    padding-left: 56px;
+
     display: flex;
     border-radius: 32px;
     background: #dce5e2;
@@ -1044,6 +1044,18 @@
     }
   }
 }
+.swiper-pagination-bullet {
+  @media (max-width: 1140px) {
+    max-width: 110px;
+  }
+
+  @media (max-width: 655px) {
+    max-width: 80px;
+  }
+  @media (max-width: 370px) {
+    max-width: 50px;
+  }
+}
 
 .shop {
   &__info {
@@ -1169,19 +1181,6 @@
       justify-content: center;
       text-align: center;
     }
-  }
-}
-
-.swiper-pagination-bullet {
-  @media (max-width: 1140px) {
-    max-width: 110px;
-  }
-
-  @media (max-width: 655px) {
-    max-width: 80px;
-  }
-  @media (max-width: 370px) {
-    max-width: 50px;
   }
 }
 
