@@ -153,6 +153,7 @@
     }
   }
   &__pictures {
+    position: relative;
     img {
       width: 100%;
     }
@@ -960,7 +961,7 @@
       min-height: 327px;
     }
     @media (max-width: 655px) {
-      padding: 5px;
+      // padding: 5px;
     }
     @media (max-width: 370px) {
       min-height: 340px;

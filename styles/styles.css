@@ -146,6 +146,9 @@
     transform: translateX(0);
   }
 }
+.store__pictures {
+  position: relative;
+}
 .store__pictures img {
   width: 100%;
 }
@@ -927,11 +930,6 @@
 @media (max-width: 810px) {
   .store__slide {
     min-height: 327px;
-  }
-}
-@media (max-width: 655px) {
-  .store__slide {
-    padding: 5px;
   }
 }
 @media (max-width: 370px) {
