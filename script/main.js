@@ -15,7 +15,7 @@ document.addEventListener('click', (e) => {
 /////////
 
 const swiper = new Swiper('.swiper', {
-    // effect: 'cube',
+    effect: 'cube',
     cubeEffect: {
         shadow: false,
         slideShadows: false,
