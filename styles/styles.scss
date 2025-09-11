@@ -779,7 +779,6 @@
 }
 
 .footer {
-  display: none;
   background: #f8f9fa;
   &__wrapper {
     margin: 0 auto;
@@ -884,9 +883,9 @@
     }
   }
   &__social {
-    max-width: 197px;
-    width: 100%;
-    max-width: 197px;
+    // max-width: 197px;
+    // width: 100%;
+    // max-width: 197px;
     &-wrap {
       display: flex;
       flex-direction: column;
@@ -1359,6 +1358,108 @@
   &__wrapper {
     @media (max-width: 600px) {
       padding: 10.55px 0 24px;
+    }
+  }
+}
+
+.footer {
+  &__logo {
+    @media (max-width: 1100px) {
+      margin-bottom: 6px;
+    }
+  }
+  &__link {
+    @media (max-width: 1100px) {
+      gap: 40px;
+    }
+    > div:nth-child(1),
+    > div:nth-child(2),
+    > div:nth-child(3) {
+      @media (max-width: 1100px) {
+        margin-right: 0px;
+      }
+    }
+    @media (max-width: 523px) {
+      flex-direction: column;
+    }
+  }
+  &__wrapper {
+    @media (max-width: 1100px) {
+      display: block;
+      padding: 10px;
+      margin-bottom: 26px;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 16px;
+    }
+  }
+  &__block {
+    @media (max-width: 1100px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__product {
+    &-wrap {
+      @media (max-width: 610px) {
+        gap: 6px;
+      }
+    }
+    &-link {
+      @media (max-width: 523px) {
+        border-bottom: 1px solid #00000024;
+        padding-bottom: 3px;
+      }
+    }
+  }
+  &__company {
+    &-wrap {
+      @media (max-width: 610px) {
+        gap: 6px;
+      }
+    }
+    &-link {
+      @media (max-width: 523px) {
+        border-bottom: 1px solid #00000024;
+        padding-bottom: 3px;
+      }
+    }
+  }
+  &__support {
+    &-wrap {
+      @media (max-width: 610px) {
+        gap: 6px;
+      }
+    }
+    &-link {
+      @media (max-width: 523px) {
+        border-bottom: 1px solid #00000024;
+        padding-bottom: 3px;
+      }
+    }
+  }
+  &__social {
+    &-wrap {
+      @media (max-width: 610px) {
+        gap: 6px;
+      }
+    }
+    &-link {
+      @media (max-width: 523px) {
+        border-bottom: 1px solid #00000024;
+        padding-bottom: 3px;
+        padding: 0 68px 0 0;
+      }
+    }
+  }
+  &__line {
+    @media (max-width: 523px) {
+      display: none;
+    }
+  }
+  &__wrap {
+    @media (max-width: 523px) {
+      flex-direction: column;
+      gap: 6px;
     }
   }
 }

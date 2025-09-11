@@ -764,7 +764,6 @@
 }
 
 .footer {
-  display: none;
   background: #f8f9fa;
 }
 .footer__wrapper {
@@ -859,11 +858,6 @@
   font-size: 17px;
   line-height: 127%;
   color: #000;
-}
-.footer__social {
-  max-width: 197px;
-  width: 100%;
-  max-width: 197px;
 }
 .footer__social-wrap {
   display: flex;
@@ -1344,5 +1338,101 @@
 @media (max-width: 600px) {
   .gift__wrapper {
     padding: 10.55px 0 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer__logo {
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__link {
+    gap: 40px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__link > div:nth-child(1),
+  .footer__link > div:nth-child(2),
+  .footer__link > div:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 523px) {
+  .footer__link {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__wrapper {
+    display: block;
+    padding: 10px;
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 600px) {
+  .footer__wrapper {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__block {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 610px) {
+  .footer__product-wrap {
+    gap: 6px;
+  }
+}
+@media (max-width: 523px) {
+  .footer__product-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1411764706);
+    padding-bottom: 3px;
+  }
+}
+@media (max-width: 610px) {
+  .footer__company-wrap {
+    gap: 6px;
+  }
+}
+@media (max-width: 523px) {
+  .footer__company-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1411764706);
+    padding-bottom: 3px;
+  }
+}
+@media (max-width: 610px) {
+  .footer__support-wrap {
+    gap: 6px;
+  }
+}
+@media (max-width: 523px) {
+  .footer__support-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1411764706);
+    padding-bottom: 3px;
+  }
+}
+@media (max-width: 610px) {
+  .footer__social-wrap {
+    gap: 6px;
+  }
+}
+@media (max-width: 523px) {
+  .footer__social-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1411764706);
+    padding-bottom: 3px;
+    padding: 0 68px 0 0;
+  }
+}
+@media (max-width: 523px) {
+  .footer__line {
+    display: none;
+  }
+}
+@media (max-width: 523px) {
+  .footer__wrap {
+    flex-direction: column;
+    gap: 6px;
   }
 }/*# sourceMappingURL=styles.css.map */
