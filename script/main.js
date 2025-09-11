@@ -16,10 +16,7 @@ document.addEventListener('click', (e) => {
 
 const swiper = new Swiper('.swiper', {
     effect: 'cube',
-    cubeEffect: {
-        shadow: false,
-        slideShadows: false,
-    },
+
     slidesPerView: 1,
     speed: 1100,
     loop: true,

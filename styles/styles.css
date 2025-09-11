@@ -106,7 +106,6 @@
 }
 .store__info-button {
   max-width: 100%;
-  margin: 0 auto;
   z-index: 2;
   display: flex;
   align-items: center;
