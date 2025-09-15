@@ -102,3 +102,28 @@ openSearch.addEventListener('click', () => {
         toggleSearcher();
     }
 });
+
+
+///////
+document.addEventListener("DOMContentLoaded", () => {
+    const trigger = document.getElementById("solution");
+    const parentItem = trigger.closest(".nav__list-item");
+    const dropdown = parentItem.querySelector(".nav__links");
+
+    trigger.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown.classList.toggle("open");
+    });
+
+
+    document.addEventListener("click", (e) => {
+        const isClickInside = parentItem.contains(e.target);
+
+        if (!isClickInside) {
+            dropdown.classList.remove("open");
+        }
+    });
+});
+
+
+

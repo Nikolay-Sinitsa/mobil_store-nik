@@ -338,6 +338,7 @@
       display: flex;
       align-items: center;
       gap: 3px;
+      cursor: pointer;
     }
     &-item {
       &:nth-child(1) {
@@ -373,6 +374,19 @@
     z-index: 2;
     left: 0;
     top: 26px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    &.open {
+      transform: scaleY(1);
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+    }
+
     &-link {
       font-family: var(--second-family);
       font-weight: 300;
@@ -447,9 +461,8 @@
       color: #000;
     }
     &-button {
-      max-width: 100%;
-
-      z-index: 2;
+      // max-width: 100%;
+      // z-index: 2;
       display: flex;
       align-items: center;
       justify-content: center;
